@@ -15,9 +15,11 @@ lazy val root = project
     ),
 
     /* Uncomment the next two lines if you want
-       scalafmt and scalafix to run whenever your code is compiled. */
-    scalafmtOnCompile := true,
-    scalafixOnCompile := true,
+       scalafmt and scalafix to run whenever your code is compiled. It
+       is recommended to instead use format on save for scalafmt and Metals'
+       custom keybinding for scalafix. */
+    // scalafmtOnCompile := true,
+    // scalafixOnCompile := true,
 
     // Test Dependencies
     libraryDependencies += "org.scalameta" %% "munit" % "1.0.0" % Test
