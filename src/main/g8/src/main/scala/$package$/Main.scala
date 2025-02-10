@@ -1,4 +1,4 @@
-package edu.uic.cs474.spring25.inclass.encapsulation
+package $package$
 
 @main
 def main(args: String*) = println:
