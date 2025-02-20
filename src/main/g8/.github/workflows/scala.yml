@@ -3,7 +3,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Scala CI
+name: Run SBT Tests
 
 on:
   push:
@@ -29,5 +29,5 @@ jobs:
         cache: 'sbt'
     - name: Setup sbt launcher
       uses: sbt/setup-sbt@v1
-    - name: Run tests
-      run: sbt test
+    - name: Build and test
+      run: sbt +test
