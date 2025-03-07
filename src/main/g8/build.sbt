@@ -10,7 +10,14 @@ lazy val root = project
     semanticdbVersion      := scalafixSemanticdb.revision,
     Compile / doc / target := file("docs"),
     scalacOptions ++= Seq(
-      "-Wunused:all"
+      "-Wunused:all",
+      "-Wnonunit-statement",
+      "-Wvalue-discard",
+      "-deprecation",
+      "-feature",
+      "-source:future"
+    ),
+
     ),
 
     // Iron for strong type constraints
