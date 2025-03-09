@@ -24,6 +24,6 @@ lazy val root = project
     libraryDependencies += "io.github.iltotore" % "iron_3" % "2.6.0",
 
     // Test Dependencies
-    libraryDependencies += "org.scalameta" %% "munit" % "1.0.0" % Test,
-    libraryDependencies += "org.scalameta" %% "munit-scalacheck" % "1.0.0" % Test
+    libraryDependencies += "org.scalameta" %% "munit" % "1.1.0" % Test,
+    libraryDependencies += "org.scalameta" %% "munit-scalacheck" % "1.1.0" % Test
   )
