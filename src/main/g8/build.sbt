@@ -18,8 +18,6 @@ lazy val root = project
       "-source:future"
     ),
 
-    ),
-
     // Iron for strong type constraints
     libraryDependencies += "io.github.iltotore" % "iron_3" % "2.6.0",
 
