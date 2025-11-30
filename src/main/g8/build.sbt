@@ -14,14 +14,12 @@ lazy val root = project
       "-Wnonunit-statement",
       "-Wvalue-discard",
       "-deprecation",
-      "-feature",
-      "-source:future"
+      "-rewrite",
+      "-no-indent"
     ),
 
     // Test Dependencies
-    libraryDependencies += "org.scalameta" %% "munit" % "1.2.1" % Test,
+    libraryDependencies += "org.scalameta" %% "munit"            % "1.2.1" % Test,
     libraryDependencies += "org.scalameta" %% "munit-scalacheck" % "1.2.0" % Test,
-    libraryDependencies += "org.scalamock" %% "scalamock" % "7.5.0" % Test,
-    libraryDependencies += "com.lihaoyi"   %% "utest"     % "0.9.1" % Test,
-    testFrameworks += new TestFramework("utest.runner.Framework")
+    libraryDependencies += "org.scalamock" %% "scalamock"        % "7.5.0" % Test
   )
