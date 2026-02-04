@@ -15,7 +15,9 @@ lazy val root = project
       "-Wvalue-discard",
       "-deprecation",
       "-rewrite",
-      "-no-indent"
+      "-no-indent",
+      "-source:future",
+      "-feature"
     ),
 
     // Test Dependencies
